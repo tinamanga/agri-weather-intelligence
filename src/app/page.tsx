@@ -14,11 +14,11 @@ export default function Home() {
 
         <div className="flex justify-center gap-4">
           <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
-            Check Weather
+          Get Weather Insights
           </button>
 
           <button className="px-6 py-3 border border-green-600 text-green-700 rounded-lg hover:bg-green-100">
-            Analyze Crops
+            Analyze Farm Health 
           </button>
         </div>
       </div>
