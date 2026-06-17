@@ -1,7 +1,11 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center px-6 bg-green-50">
+
       <div className="max-w-3xl text-center">
+
         <h1 className="text-5xl font-bold text-green-700 mb-6">
           Agri Weather Intelligence
         </h1>
@@ -13,14 +17,21 @@ export default function Home() {
         </p>
 
         <div className="flex justify-center gap-4">
-          <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
-          Get Weather Insights
-          </button>
 
-          <button className="px-6 py-3 border border-green-600 text-green-700 rounded-lg hover:bg-green-100">
-            Analyze Farm Health 
-          </button>
+          <Link href="/weather">
+            <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
+              Get Weather Insights
+            </button>
+          </Link>
+
+          <Link href="/analyze">
+            <button className="px-6 py-3 border border-green-600 text-green-700 rounded-lg hover:bg-green-100">
+              Analyze Farm Health
+            </button>
+          </Link>
+
         </div>
+
       </div>
     </main>
   );
